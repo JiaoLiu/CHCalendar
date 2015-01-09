@@ -11,5 +11,7 @@ Just copy the CHCalendar Dir into your Project!!<br>
 
 Screenshots
 
-![image](https://github.com/JiaoLiu/WeChat/blob/master/ScreenShots/Register.png)
+![image](https://github.com/JiaoLiu/CHCalendar/blob/master/Screenshot/main.png)
+
+![image](https://github.com/JiaoLiu/CHCalendar/blob/master/Screenshot/select.png)
 
