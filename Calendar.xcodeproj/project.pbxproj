@@ -16,7 +16,8 @@
 		0F0B599F1A5D36C6003ED7F6 /* CHDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0B599E1A5D36C6003ED7F6 /* CHDatePickerView.swift */; };
 		0F5550D71A5E1D6800B18DC0 /* CHDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5550D61A5E1D6800B18DC0 /* CHDateCell.swift */; };
 		0F5550DC1A5E7FA500B18DC0 /* backImg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F5550DB1A5E7FA500B18DC0 /* backImg@2x.png */; };
-		0F5550DE1A5E84C100B18DC0 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F5550DD1A5E84C100B18DC0 /* arrow@2x.png */; };
+		0F8F68C31A6362A700E0F01A /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F8F68C11A6362A700E0F01A /* back@2x.png */; };
+		0F8F68C41A6362A700E0F01A /* forward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F8F68C21A6362A700E0F01A /* forward@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +44,8 @@
 		0F0B599E1A5D36C6003ED7F6 /* CHDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHDatePickerView.swift; sourceTree = "<group>"; };
 		0F5550D61A5E1D6800B18DC0 /* CHDateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHDateCell.swift; sourceTree = "<group>"; };
 		0F5550DB1A5E7FA500B18DC0 /* backImg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backImg@2x.png"; sourceTree = "<group>"; };
-		0F5550DD1A5E84C100B18DC0 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
+		0F8F68C11A6362A700E0F01A /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		0F8F68C21A6362A700E0F01A /* forward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forward@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				0F5550DB1A5E7FA500B18DC0 /* backImg@2x.png */,
-				0F5550DD1A5E84C100B18DC0 /* arrow@2x.png */,
+				0F8F68C11A6362A700E0F01A /* back@2x.png */,
+				0F8F68C21A6362A700E0F01A /* forward@2x.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -222,8 +225,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F0B59831A5D2CDC003ED7F6 /* Main.storyboard in Resources */,
-				0F5550DE1A5E84C100B18DC0 /* arrow@2x.png in Resources */,
 				0F5550DC1A5E7FA500B18DC0 /* backImg@2x.png in Resources */,
+				0F8F68C41A6362A700E0F01A /* forward@2x.png in Resources */,
+				0F8F68C31A6362A700E0F01A /* back@2x.png in Resources */,
 				0F0B59881A5D2CDC003ED7F6 /* LaunchScreen.xib in Resources */,
 				0F0B59851A5D2CDC003ED7F6 /* Images.xcassets in Resources */,
 			);

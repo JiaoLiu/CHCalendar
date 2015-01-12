@@ -53,12 +53,11 @@ class CHDatePickerView: UIView, UICollectionViewDataSource, UICollectionViewDele
         
         let leftBtn = UIButton(frame: CGRectMake(0, 0, 50, frame.height))
         leftBtn.addTarget(self, action: "leftBtnClicked", forControlEvents: UIControlEvents.TouchUpInside)
-        leftBtn.setImage(UIImage(named: "arrow"), forState: UIControlState.Normal)
-        leftBtn.transform = CGAffineTransformRotate(leftBtn.transform, CGFloat(M_PI))
+        leftBtn.setImage(UIImage(named: "back"), forState: UIControlState.Normal)
         topView.addSubview(leftBtn)
         
         let rightBtn = UIButton(frame: CGRectMake(frame.width - 50, 0, 50, frame.height))
-        rightBtn.setImage(UIImage(named: "arrow"), forState: UIControlState.Normal)
+        rightBtn.setImage(UIImage(named: "forward"), forState: UIControlState.Normal)
         rightBtn.addTarget(self, action: "rightBtnClicked", forControlEvents: UIControlEvents.TouchUpInside)
         topView.addSubview(rightBtn)
     }
