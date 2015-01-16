@@ -116,6 +116,7 @@ class CHDatePickerView: UIView, UICollectionViewDataSource, UICollectionViewDele
             {
                 cell.textLabel?.textColor = UIColor(red: 242 / 255.0, green: 173 / 255.0, blue: 83 / 255.0, alpha: 1.0)
             }
+            cell.selectedBackgroundView  = nil
         }
         else
         {
@@ -145,7 +146,7 @@ class CHDatePickerView: UIView, UICollectionViewDataSource, UICollectionViewDele
             cell.textLabel?.font = UIFont.systemFontOfSize(14.0)
             
             let selectionView = UIView(frame: CGRectMake(0, 0, cell.frame.width, cell.frame.height))
-            selectionView.backgroundColor = UIColor.lightGrayColor()
+            selectionView.backgroundColor = UIColor(white: 0.8, alpha: 1.0)
             selectionView.layer.cornerRadius = cell.frame.width / 2.0
             cell.selectedBackgroundView = selectionView
         }
@@ -153,13 +154,13 @@ class CHDatePickerView: UIView, UICollectionViewDataSource, UICollectionViewDele
     }
     
     func collectionView(collectionView: UICollectionView!, didSelectItemAtIndexPath indexPath: NSIndexPath!){
-        collectionView.deselectItemAtIndexPath(indexPath, animated: true)
+//        collectionView.deselectItemAtIndexPath(indexPath, animated: true)
         if indexPath.section != 0
         {
             let item = dateArr.objectAtIndex((indexPath.section - 1) * 7 + indexPath.row) as NSDictionary
             delegate?.selectedDate(item.objectForKey("date") as NSDate)
             let isCurrentMonth  = item.objectForKey("isCurentMonth") as Bool
-            self.removeFromSuperview()
+//            self.removeFromSuperview()
         }
     }
     
