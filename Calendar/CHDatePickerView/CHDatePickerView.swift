@@ -103,7 +103,7 @@ class CHDatePickerView: UIView, UICollectionViewDataSource, UICollectionViewDele
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("Date_Cell", forIndexPath: indexPath) as CHDateCell
+        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("Date_Cell", forIndexPath: indexPath) as! CHDateCell
         if indexPath.section == 0
         {
             cell.textLabel?.text = weekArr.objectAtIndex(indexPath.row) as? String
@@ -120,9 +120,9 @@ class CHDatePickerView: UIView, UICollectionViewDataSource, UICollectionViewDele
         }
         else
         {
-            let item = dateArr.objectAtIndex((indexPath.section - 1) * 7 + indexPath.row) as NSDictionary
-            let date = item.objectForKey("date") as NSDate
-            let isCurrentMonth  = item.objectForKey("isCurentMonth") as Bool
+            let item = dateArr.objectAtIndex((indexPath.section - 1) * 7 + indexPath.row) as! NSDictionary
+            let date = item.objectForKey("date") as! NSDate
+            let isCurrentMonth  = item.objectForKey("isCurentMonth") as! Bool
             if isCurrentMonth
             {
                 cell.textLabel?.textColor = UIColor.blackColor()
@@ -153,13 +153,13 @@ class CHDatePickerView: UIView, UICollectionViewDataSource, UICollectionViewDele
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView!, didSelectItemAtIndexPath indexPath: NSIndexPath!){
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath){
 //        collectionView.deselectItemAtIndexPath(indexPath, animated: true)
         if indexPath.section != 0
         {
-            let item = dateArr.objectAtIndex((indexPath.section - 1) * 7 + indexPath.row) as NSDictionary
-            delegate?.selectedDate(item.objectForKey("date") as NSDate)
-            let isCurrentMonth  = item.objectForKey("isCurentMonth") as Bool
+            let item = dateArr.objectAtIndex((indexPath.section - 1) * 7 + indexPath.row) as! NSDictionary
+            delegate?.selectedDate(item.objectForKey("date") as! NSDate)
+            let isCurrentMonth  = item.objectForKey("isCurentMonth") as! Bool
 //            self.removeFromSuperview()
         }
     }
